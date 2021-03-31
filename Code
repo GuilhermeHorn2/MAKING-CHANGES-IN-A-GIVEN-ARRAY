@@ -1,0 +1,24 @@
+/*add a new element to the end of the array(i dont want to change the original array)*/ 
+  function add (arr,bookName) {
+  let narr = [...arr]
+  narr.push(bookName);
+  return narr;
+
+  
+  
+}
+
+/*removing an elemnt from the array(i dont want to change the original array)*/
+function remove (arr,bookName) {
+  var book_index = bookList.indexOf(bookName);
+  let narr2 = [...arr]
+  if (book_index >= 0) {
+
+    /*from the index o the element remove 1 element = remove this element*/
+    narr2.splice(narr2.indexOf(bookName),1)
+    /**/
+
+    return narr2;
+
+    }
+}
